@@ -14,7 +14,7 @@ app.use(express.json({ limit: "15mb" }));
 
 // Initialize Google Gen AI
 const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
+  apiKey: process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY,
   httpOptions: {
     headers: {
       "User-Agent": "aistudio-build",
