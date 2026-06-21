@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Food Fix",
+  "description": "A minimal food delivery application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
