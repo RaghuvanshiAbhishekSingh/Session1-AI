@@ -113,7 +113,7 @@ ${formattedHistory}`;
       };
 
       const response = await ai.models.generateContent({
-        model: "gemini-3.5-flash",
+        model: "gemini-2.5-flash",
         contents: [checkPrompt, imagePart],
       });
 
@@ -136,7 +136,7 @@ Does this message pertain to a complaint or concern about food quality, safety, 
 Answer exactly "YES" or "NO". Do not include any other text.`;
 
     const checkClassification = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-2.5-flash",
       contents: classificationPrompt,
     });
 
@@ -160,7 +160,7 @@ Use the following historical conversation -
 ${formattedHistory}`;
 
     const policyResponse = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-2.5-flash",
       contents: policyPrompt,
     });
 
